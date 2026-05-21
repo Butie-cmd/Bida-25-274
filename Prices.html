@@ -3,111 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <title>Yarona Car Wash</title>
+  <link rel="stylesheet" href="styles3.css">
+
 </head>
 <body>
 
   <!-- Navigation -->
   <header>
-    <div> <img src="Droplet.jpg" alt="Droplet image"> </div>
-    <p>Yarona Car Wash</p>
-    <nav>
-      <ul>
-        <li><a href="#">Home Nav</a></li>
-        <li><a href="#">About Nav</a></li>
-        <li><a href="#">Services Nav</a></li>
-        <li><a href="#">Prices Nav</a></li>
-        <li><a href="#">Gallery Nav</a></li>
-        <li><a href="#">Contact Nav</a></li>
-      </ul>
-    </nav>
-    <button>Button</button>
-  </header>
-      
-
-  <!-- Pricing Section -->
-  <section>
-    <h2>Pricing</h2>
-    <p>Enhance your service with premium treatments</p>
-    <div>
-      <div>
-        <h3>Express Car Wash</h3>
-        <p>75 BWP</p>
-      <ul>
-        <li>* High-pressure pre-wash</li>
-        <li>* Wheel & tire cleaning</li>
-        <li>* Premium foam application</li>
-        <li>* Spot-free rinse</li>
-        <li>* Air dry</li>
-      </ul>
-      <button>Book Express Wash</button>
-      </div>
-    </section>
-
-    <section>
-     <div>
-        <h2>Premium Wash</h2>
-        <p>125 BWP</p>
-      <ul>
-        <li>* Everything in Express Wash</li>
-        <li>* Hand wax application</li>
-        <li>*Interior vacuum </li>
-        <li>* Window cleaning</li>
-        <li>*Dashboard detailing </li>
-        <li>* Tire shine</li>
-      </ul>
-      <button>Book Premium Wash</button>
-      </div>
-    </section>
-   </div>
-</section>
-      
-<!-- Specialty Services Prices -->
-<section>
-        <h3>Specialty Services</h3>
-      <ul>
-        <div>* Ceramic coating = 200 BWP</div>
-        <div>* Paint protection film = 150 BWP</div>
-        <div>* Headlight restoration = 50 BWP</div>
-        <div>* Odor elimination = 50 BWP</div>
-        <div>* Pet hair removal = 30 BWP</div>
-        <div>* Scratch removal = 100 BWP</div>
-      </ul>
-        <button>Book Any Specialty Service Now</button>
-      
+    <div class="logo-container">
+        <img src="droplet.jpg" alt="Droplet image">
+        <h1>Yarona Car Wash</h1>
+    </div>
     
-        
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="prices.html">Prices</a></li> 
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+    
+    <a href="contact.html" class="btn-primary">Book Now</a>
+</header>
+      
+<!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-content">
+    <h1>Pricing</h1>
+    <p>Enhance your service with premium treatments</p>
     </div>
   </section>
 
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="pricing-header">
+        <h2>Choose Your Wash</h2>
+        <p>Quality service tailored to your vehicle's needs.</p>
+    </div>
+
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Express Wash</h3>
+            <div class="price">75 bwp</div>
+            <p class="tagline">Perfect for regular maintenance</p>
+            <ul class="price-features">
+                <li>High-pressure pre-wash</li>
+                <li>Premium foam application</li>
+                <li>Wheel & tire cleaning</li>
+                <li>Spot-free rinse</li>
+                <li>Air dry</li>
+                <li>15-20 minutes</li>
+            </ul>
+            <a href="contact.html" class="btn-primary">Book Now</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="popular-badge">Most Popular</div>
+            <h3>Premium Wash</h3>
+            <div class="price">125 bwp</div>
+            <p class="tagline">Our most popular package</p>
+            <ul class="price-features">
+                <li>Everything in Express Wash</li>
+                <li>Hand wax application</li>
+                <li>Interior vacuum</li>
+                <li>Window cleaning inside & out</li>
+                <li>Dashboard detailing</li>
+                <li>Tire shine</li>
+                <li>30-35 minutes</li>
+            </ul>
+            <a href="contact.html" class="btn-primary">Book Now</a>
+        </div>
+    </div>
+</section>
+    
   <!-- Footer -->
-  <footer>
-    <div>
-      <h5>Yarona Car Wash</h5>
-      <p>Your premium car care partner</p>
+    <footer>
+  <div class="footer-container">
+        <div class="footer-col">
+            <h4>Yarona Car Wash</h4>
+            <p>Your trusted partner for professional car care since 2015.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 8am - 7pm</p>
+            <p>Saturday: 9am - 6pm</p>
+            <p>Sunday: 10am - 5pm</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>YaronaCarWash@gmail.com</p>
+            <p>+267 78019761</p>
+            <p>Block 7, Gaborone, Botswana</p>
+        </div>
     </div>
-    <div>
-      <h6>Nav Links</h6>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Prices</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Yarona Car Wash. All rights reserved.</p>
     </div>
-    <div>
-      <h7>Hours</h7>
-      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-      <p>Saturday: 9:00 AM - 7:00 PM</p>
-      <p>Sunday: Closed</p>
-    </div>
-    <div>
-      <h8>Contact Us</h8>
-      <p>YaronaCarWash@gmal.com</p>
-      <p>+267 78019761</p>
-      <p>Block 7, Gaborone, Botswana</p>
-  </footer>
+</footer>
 
 </body>
 </html>

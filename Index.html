@@ -3,86 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <title>Yarona Car Wash</title>
+<link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
   <!-- Navigation -->
   <header>
-    <div> <img src="Droplet.jpg" alt="Droplet image"> </div>
-    <p>Yarona Car Wash</p>
+    <div class="logo-container">
+        <img src="droplet.jpg" alt="Droplet image">
+        <h1>Yarona Car Wash</h1>
+    </div>
+    
     <nav>
-      <ul>
-        <li><a href="#">Home Nav</a></li>
-        <li><a href="#">About Nav</a></li>
-        <li><a href="#">Services Nav</a></li>
-        <li><a href="#">Prices Nav</a></li>
-        <li><a href="#">Gallery Nav</a></li>
-        <li><a href="#">Contact Nav</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="prices.html">Prices</a></li> 
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
     </nav>
-    <button>Button</button>
-  </header>
+    
+    <a href="contact.html" class="btn-primary">Book Now</a>
+</header>
 
   <!-- Hero Section -->
-  <section>
-    <h1>Yarona Car Wash</h1>
-    <p>Premium car care that keeps your car looking showroom fresh</p>
-    <button>Book an appointment</button> <button>View prices</button>
-    <img src="car-.jpg" alt="Car Image">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Yarona Car Wash</h1>
+      <p>Premium car care that keeps your car looking showroom fresh</p>
+      <div class="btn-container">
+    <a href="contact.html" class="btn-filled">
+        Book Appointment <span class="arrow">&rarr;</span>
+    </a>
+
+    <a href="prices.html" class="btn-outline">
+        View Pricing
+    </a>
+</div>
+      
   </section>
 
   <!-- Services / Cards -->
-  <section>
-    <h2> <sub>Premium Quality  Proffesional detailing that delivers exceptional results </sub>
-         <sub>Fast Service
-                Quick and efficient car wash without compromising quality
-            </sub>
-             <sub>Safe and Eco-Friendly
-                Gentle on your car and the environment with our eco-friendly products
-            </sub>
-    </h2>
-    <h3><p>Why Choose Yarona Car Wash?</p> </h3>
-        <p>We combine new technology with traditional car care methods to provide you with the ultimate car care experience.</p>
-        <button>Explore our services</button>
-    
-  </section>
+  <section class="features">
+    <div class="feature-item">
+        <div class="icon">✦</div>
+        <h3>Premium Quality</h3>
+        <p>Professional detailing that exceeds expectations every time.</p>
+    </div>
+
+    <div class="feature-item">
+        <div class="icon">🕒</div>
+        <h3>Fast Service</h3>
+        <p>Get your car sparkling clean in 30 minutes or less.</p>
+    </div>
+
+    <div class="feature-item">
+        <div class="icon">🛡️</div>
+        <h3>Safe & Eco-Friendly</h3>
+        <p>Gentle on your vehicle and the environment.</p>
+    </div>
+</section>
 
   <!-- Call to Action -->
-  <section>
-    <h4>Ready for a spotless ride?</h4>
-    <p>Book an appointment today and experience the Yarona difference!</p>
-    <button>Schedule now</button>
-  </section>
+  <section class="cta-banner">
+    <h2>Ready for a Spotless Ride?</h2>
+    <p>Book your appointment today and experience the Yarona difference.</p>
+    <a href="contact.html" class="btn-filled">Schedule Now</a>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <div>
-      <h5>Yarona Car Wash</h5>
-      <p>Your premium car care partner</p>
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Yarona Car Wash</h4>
+            <p>Your trusted partner for professional car care since 2015.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 8am - 7pm</p>
+            <p>Saturday: 9am - 6pm</p>
+            <p>Sunday: 10am - 5pm</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>YaronaCarWash@gmail.com</p>
+            <p>+267 78019761</p>
+            <p>Block 7, Gaborone, Botswana</p>
+        </div>
     </div>
-    <div>
-      <h6>Nav Links</h6>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Prices</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Yarona Car Wash. All rights reserved.</p>
     </div>
-    <div>
-      <h7>Hours</h7>
-      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-      <p>Saturday: 9:00 AM - 7:00 PM</p>
-      <p>Sunday: Closed</p>
-    </div>
-    <div>
-      <h8>Contact Us</h8>
-      <p>YaronaCarWash@gmal.com</p>
-      <p>+267 78019761</p>
-      <p>Block 7, Gaborone, Botswana</p>
-  </footer>
+</footer>
 
-</body>
+</body> 
 </html>

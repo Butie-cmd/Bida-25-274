@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yarona Car Wash</title>
+  <link rel="stylesheet" href="styles5.css">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo-container">
+        <img src="droplet.jpg" alt="Droplet image">
+        <h1>Yarona Car Wash</h1>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="prices.html">Prices</a></li> 
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+    
+    <a href="contact.html" class="btn-primary">Book Now</a>
+</header>
+
+  <!-- Contact Us Section -->
+     <section class="hero-banner">
+    <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We're here to help. Reach out today! </p>
+    </div>
+  </section>
+   
+      <!-- Contact Details -->
+      <section class="contact-section">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-item">📍 <strong>Location:</strong> 123 Clean Street, Your City, ST 12345</div>
+        <div class="info-item">📞 <strong>Phone:</strong> (555) WASH-CAR</div>
+        <div class="info-item">✉️ <strong>Email:</strong> info@pureshine.com</div>
+        <div class="info-item">⏰ <strong>Hours:</strong> Mon-Fri: 8am-7pm | Sat: 9am-6pm | Sun: 10am-5pm</div>
+
+         <div class="info-box">
+           <h3>Walk-ins Welcome!</h3>
+            <p>No appointment needed for Express and Premium washes. Full Details require advance booking.</p>
+        </div>
+      </div>
+
+      <form id="bookingForm" class="booking-form">
+        <h3>Book an Appointment</h3>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone">
+        <select>
+          <option>Select a service</option>
+          <option>Express Wash</option>
+          <option>Premium Detail</option>
+        </select>
+        <input type="date">
+        <textarea placeholder="Additional Notes"></textarea>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+
+     <div class="map-container">
+      <h3>Find Us</h3>
+      <div class="map-placeholder">Map Integration Goes Here (Google Maps API)</div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault(); 
+
+  const btn = this.querySelector('button');
+  btn.textContent = "Sending..."; 
+  btn.disabled = true;
+
+  
+  setTimeout(() => {
+    this.innerHTML = "<h3>Message Received!</h3><p>We'll be in touch shortly.</p>";
+  }, 1500); 
+});
+</script>
+
+</body>
+
+   <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Yarona Car Wash</h4>
+            <p>Your trusted partner for professional car care since 2015.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 8am - 7pm</p>
+            <p>Saturday: 9am - 6pm</p>
+            <p>Sunday: 10am - 5pm</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>YaronaCarWash@gmail.com</p>
+            <p>+267 78019761</p>
+            <p>Block 7, Gaborone, Botswana</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Yarona Car Wash. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
+
+

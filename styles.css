@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 15px 15%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    width: auto;
+    height: 30px;
+}
+
+.logo-container h1 {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+                                                                                
+p {
+    color: rgb(243, 243, 247);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 48, 120, 0.6), rgba(0, 48, 120, 0.6)), url("home-car.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+}
+
+.hero-content h1 {
+        font-size: 80px;
+        font-weight: 800;
+        line-height: 1.1;
+        color: white;
+        margin-bottom: 20px;
+        opacity: 1;jnko
+    
+}
+
+.btn-container {
+    display: flex;
+    gap: 16px; 
+    padding: 20px; 
+}
+
+.btn-filled, .btn-outline {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.btn-filled {
+    background-color: #f8f9fa;
+    color: #1a365d;
+    border: none;
+}
+
+.btn-filled:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px); 
+}
+
+
+.btn-outline {
+    background-color: transparent;
+    color: #f8f9fa;
+    border: 2px solid rgba(255, 255, 255, 0.4); 
+}
+
+.btn-outline:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arrow {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 10%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.features:hover .feature-item {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.feature-item {
+    max-width: 300px;
+    flex: 1;
+
+}
+.icon {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #1f2937;
+}
+.feature-item p {
+    color: #494b4e;
+    font-size: 1rem;
+    line-height: 1.6;
+
+}
+
+
+.cta-banner {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+}
+.cta-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 60px 10% 20px 10%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+.footer-col a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-col a:hover {
+    color: white;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+}

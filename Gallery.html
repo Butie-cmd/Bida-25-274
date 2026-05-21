@@ -3,86 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <title>Yarona Car Wash</title>
+  <link rel="stylesheet" href="styles4.css">
+
 </head>
 <body>
 
   <!-- Navigation -->
   <header>
-    <div> <img src="Droplet.jpg" alt="Droplet image"> </div>
-    <p>Yarona Car Wash</p>
+    <div class="logo-container">
+        <img src="droplet.jpg" alt="Droplet image">
+        <h1>Yarona Car Wash</h1>
+    </div>
+    
     <nav>
-      <ul>
-        <li><a href="#">Home Nav</a></li>
-        <li><a href="#">About Nav</a></li>
-        <li><a href="#">Services Nav</a></li>
-        <li><a href="#">Prices Nav</a></li>
-        <li><a href="#">Gallery Nav</a></li>
-        <li><a href="#">Contact Nav</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="prices.html">Prices</a></li> 
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
     </nav>
-    <button>Button</button>
-  </header>
-
+    
+    <button class="btn-primary">Book Now</button>
+</header>
+      
+<!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-content">
+    <h1>Gallery</h1>
+    <p>See the quality of our work </p>
+    </div>
+  </section>
 
   <!-- Gallery Section -->
   <section>
-    <h2>Gallery</h2>
-    <p>Small sentence</p>
-    <div>
-      <button>Button</button>
-      <button>Button</button>
-      <button>Button</button>
-      <button>Button</button>
-    </div>
-  </section>
+    <div class="gallery-container">
+    <button class="image-btn active" data-filter="all">All</button>
+    <button class="image-btn" data-filter="exterior">Exterior</button>
+    <button class="image-btn" data-filter="interior">Interior</button>
+    <button class="image-btn" data-filter="detailing">Detailing</button>
+</div>
 
-  <!-- Image Columns -->
-  <section>
-    <div>
-      <h3>Car images (Left Column)</h3>
-      <div> <img src="car1.jpg" alt="Car image"> </div>
-      <div> <img src="car2.jpg" alt="Car image"> </div>
-      <div> <img src="car3.jpg" alt="Car image"> </div>
-      <div> <img src="car4.jpg" alt="Car image"> </div>
-    </div>
-    <div>
-      <h3>Car images (Right Column)</h3>
-      <div> <img src="car5.jpg" alt="Car image"> </div>
-      <div> <img src="car6.jpg" alt="Car image"> </div>
-      <div> <img src="car7.jpg" alt="Car image"> </div>
-      <div> <img src="car8.jpg" alt="Car image"> </div>
+    <div class="gallery-content">
+      <div class="image-card" data-category=" exterior"> <div class="image card"><img src="car1.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="exterior"> <div class="image card"><img src="car2.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="exterior"> <div class="image card"><img src="car3.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="interior"> <div class="image card"><img src="car4.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="interior"> <div class="image card"><img src="car5.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="interior"> <div class="image card"><img src="car6.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="detailing"> <div class="image card"><img src="car7.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="detailing"> <div class="image card"><img src="car8.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="detailing"> <div class="image card"><img src="car9.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="detailing"> <div class="image card"><img src="car10.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="detailing"> <div class="image card"><img src="car11.jpg" alt="Car image"> </div> </div>
+      <div class="image-card" data-category="detailing"> <div class="image card"><img src="car12.jpg" alt="Car image"> </div> </div>
     </div>
   </section>
+<script>
+    const filterButtons = document.querySelectorAll('.image-btn');
+    const galleryItems = document.querySelectorAll('.image-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            galleryItems.forEach(item => {
+                
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+  
+  </body>
 
   <!-- Footer -->
   <footer>
-    <div>
-      <h5>Yarona Car Wash</h5>
-      <p>Your premium car care partner</p>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Yarona Car Wash</h4>
+            <p>Your trusted partner for professional car care since 2015.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 8am - 7pm</p>
+            <p>Saturday: 9am - 6pm</p>
+            <p>Sunday: 10am - 5pm</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>YaronaCarWash@gmail.com</p>
+            <p>+267 78019761</p>
+            <p>Block 7, Gaborone, Botswana</p>
+        </div>
     </div>
-    <div>
-      <h6>Nav Links</h6>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Prices</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Yarona Car Wash. All rights reserved.</p>
     </div>
-    <div>
-      <h7>Hours</h7>
-      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-      <p>Saturday: 9:00 AM - 7:00 PM</p>
-      <p>Sunday: Closed</p>
-    </div>
-    <div>
-      <h8>Contact Us</h8>
-      <p>YaronaCarWash@gmal.com</p>
-      <p>+267 78019761</p>
-      <p>Block 7, Gaborone, Botswana</p>
-  </footer>
+</footer>
 
 </body> 
 </html>
